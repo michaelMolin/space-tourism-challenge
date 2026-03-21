@@ -44,6 +44,7 @@
 
   --text-preset-8: 400 1rem/0.192 var(--font-bellefair);
   --text-preset-8-tracking: 2px;
+  --text-preset-8-bold: 700 1rem/0.192 var(--font-bellefair);
 
   --text-preset-9: 400 1.125rem/0.180 var(--font-bellefair);
 }
@@ -60,6 +61,12 @@
 
 @utility text-preset-8 {
   font: var(--text-preset-8);
+  letter-spacing: var(--text-preset-8-tracking);
+}
+
+@utility text-preset-8-bold {
+  font: var(--text-preset-8-bold);
+  font-weight:700;
   letter-spacing: var(--text-preset-8-tracking);
 }
 
