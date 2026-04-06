@@ -19,6 +19,7 @@
   --spacing-1000: 5rem;
   --spacing-1200: 6rem;
   --spacing-1600: 8rem;
+  --spacing-1800: 9rem;
 
   --color-blue-900: #0b0d17;
   --color-blue-300: #D0D6F9;
@@ -33,7 +34,7 @@
 
   --text-preset-3: 400 3.5rem/0.642 var(--font-bellefair);
 
-  --text-preset-4: 400 2rem/0.367 var(--font-bellefair);
+  --text-preset-4: 400 1.5rem/0.367 var(--font-bellefair);
   
   --text-preset-5: 400 1.75rem/0.336 var(--font-barlow-condensed);
   --text-preset-5-tracking: 4px;
