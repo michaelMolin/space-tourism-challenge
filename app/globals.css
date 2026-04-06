@@ -35,24 +35,48 @@
 
   --text-preset-4: 400 2rem/0.367 var(--font-bellefair);
   
-  --text-preset-5: 400 1.75rem/0.336 var(--font-barlow);
+  --text-preset-5: 400 1.75rem/0.336 var(--font-barlow-condensed);
   --text-preset-5-tracking: 4px;
   
   --text-preset-6: 400 1.75rem/0.321 var(--font-barlow);
 
-  --text-preset-7: 400 0.875rem/0.168 var(--font-barlow);
+  --text-preset-7: 400 0.875rem/0.168 var(--font-barlow-condensed);
   --text-preset-7-tracking: 2px;
 
-  --text-preset-8: 400 1rem/0.192 var(--font-barlow);
+  --text-preset-8: 400 1rem/0.192 var(--font-barlow-condensed);
   --text-preset-8-tracking: 2px;
-  --text-preset-8-bold: 700 1rem/0.192 var(--font-barlow);
+  --text-preset-8-bold: 700 1rem/0.192 var(--font-barlow-condensed);
 
-  --text-preset-9: 400 1.125rem/0.180 var(--font-barlow);
+  --text-preset-9: 400 1.125rem/1.80 var(--font-barlow);
+}
+
+@utility text-preset-1 {
+  font: var(--text-preset-1);
+}
+
+@utility text-preset-2 {
+  font: var(--text-preset-2);
+}
+
+@utility text-preset-3 {
+  font: var(--text-preset-3);
+}
+
+@utility text-preset-4 {
+  font: var(--text-preset-4);
 }
 
 @utility text-preset-5 {
   font: var(--text-preset-5);
   letter-spacing: var(--text-preset-5-tracking);
+}
+
+@utility text-preset-6 {
+  font: var(--text-preset-6);
+}
+
+@utility text-preset-9 {
+  font: var(--text-preset-9);
 }
 
 @utility text-preset-7 {
@@ -70,6 +94,32 @@
   font-weight:700;
   letter-spacing: var(--text-preset-8-tracking);
 }
+
+ @utility bg-home {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('/earth-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+    }
+  }
+
+   @utility bg-page {
+    background-image: var(--page-bg-desktop);
+    background-size: cover;
+    background-position: center;
+  }
+
+  @utility bg-page-mobile {
+    background-image: var(--page-bg-mobile);
+    background-size: cover;
+    background-position: center;
+  }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
