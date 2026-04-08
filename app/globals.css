@@ -20,6 +20,7 @@
   --spacing-1200: 6rem;
   --spacing-1600: 8rem;
   --spacing-1800: 9rem;
+  --spacing-2000: 10rem;
 
   --color-blue-900: #0b0d17;
   --color-blue-300: #D0D6F9;
@@ -96,30 +97,17 @@
   letter-spacing: var(--text-preset-8-tracking);
 }
 
- @utility bg-home {
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: url('/earth-bg.jpg');
-      background-size: cover;
-      background-position: center;
-      z-index: -1;
-    }
-  }
+  @utility bg-page {
+  background-image: var(--page-bg-desktop);
+  background-size: cover;
+  background-position: center;
+}
 
-   @utility bg-page {
-    background-image: var(--page-bg-desktop);
-    background-size: cover;
-    background-position: center;
-  }
-
-  @utility bg-page-mobile {
-    background-image: var(--page-bg-mobile);
-    background-size: cover;
-    background-position: center;
-  }
+@utility bg-page-mobile {
+  background-image: var(--page-bg-mobile);
+  background-size: cover;
+  background-position: center;
+}
 
 
 @media (prefers-color-scheme: dark) {
