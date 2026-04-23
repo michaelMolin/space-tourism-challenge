@@ -27,7 +27,8 @@
   --color-white: #FFFFFF;
 
   --font-bellefair: "Bellefair", serif;
-  --font-barlow: "Barlow Condensed", serif;
+  --font-barlow: "Barlow", serif;
+  --font-barlow-condensed: "Barlow Condensed", serif;
 
   --text-preset-1: 400 9rem/1.719 var(--font-bellefair);
 
@@ -36,11 +37,13 @@
   --text-preset-3: 400 3.5rem/0.642 var(--font-bellefair);
 
   --text-preset-4: 400 1.5rem/0.367 var(--font-bellefair);
-  
+
+
   --text-preset-5: 400 1.75rem/0.336 var(--font-barlow-condensed);
+  --text-preset-5-mobile: 400 1rem/0.336 var(--font-barlow-condensed);
   --text-preset-5-tracking: 4px;
   
-  --text-preset-6: 400 1.75rem/0.321 var(--font-barlow);
+  --text-preset-6: 400 1.75rem/0.321 var(--font-bellefair);
 
   --text-preset-7: 400 0.875rem/0.168 var(--font-barlow-condensed);
   --text-preset-7-tracking: 2px;
@@ -73,9 +76,15 @@
   letter-spacing: var(--text-preset-5-tracking);
 }
 
+@utility text-preset-5-mobile {
+  font: var(--text-preset-5-mobile);
+  letter-spacing: var(--text-preset-5-tracking);
+}
+
 @utility text-preset-6 {
   font: var(--text-preset-6);
 }
+
 
 @utility text-preset-9 {
   font: var(--text-preset-9);

@@ -18,8 +18,8 @@ const clickMenu = () => setMenuOpen(!isMenuOpen)
         </div>
         <div className="p-300 text-blue-300  flex flex-1 flex-col md:flex-row md:py-1600 md:px-2000">
           <div className="h-4/10 flex flex-col justify-center md:h-full md:items-baseline md:justify-end md:w-1/2 md:max-w-[33.75rem]">
-            <h2 className="text-preset-5">SO, YOU WANT TO TRAVEL TO</h2>
-            <h1 className="my-300 text-preset-2 text-white">SPACE</h1>
+            <h1 className="text-preset-5-mobile md:text-preset-5 text-center md:text-left"> SO, YOU WANT TO TRAVEL TO </h1>
+            <h2 className="my-300 text-preset-2 text-white">SPACE</h2>
             <p className="text-preset-9">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
           </div>
           <div className="h-6/10 flex justify-center items-center md:h-full md:items-end md:justify-end md:w-1/2 md:max-w-[33.75rem]">
